@@ -61,7 +61,8 @@ html, body {
       -ms-flex-pack: end;
           justify-content: flex-end;
   padding: 16px;
-  height: 170px;
+  top: 16px;
+  /*height: 180px;*/
 }
 
 
@@ -95,4 +96,8 @@ html, body {
 
 .car-image{
   width: 100%;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
 }
