@@ -98,6 +98,25 @@ html, body {
   width: 100%;
 }
 
-::-webkit-scrollbar { 
-    display: none; 
+::-webkit-scrollbar {
+    display: none;
+}
+
+.color-eagle-blue{
+    background-color: #1E274B;
+}
+.color-eagle-red{
+    background-color: #AD0F0A;
+}
+.color-eagle-yellow{
+    background-color: #FFEC00;
+}
+.color-eagle-orange{
+    background-color: #F29100;
+}
+.color-eagle-gray{
+    background-color: #D8DBE2;
+}
+.color-eagle-darkblue{
+    background-color: #0F1426;
 }
