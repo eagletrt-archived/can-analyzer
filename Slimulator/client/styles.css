@@ -17,10 +17,10 @@
 html, body {
   font-family: 'Roboto', 'Helvetica', sans-serif;
 }
-.demo-avatar {
-  width: 48px;
-  height: 48px;
-  border-radius: 24px;
+.logo {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .demo-layout .mdl-layout__header .mdl-layout__drawer-button {
   color: rgba(0, 0, 0, 0.54);
@@ -59,7 +59,7 @@ html, body {
       -ms-flex-pack: end;
           justify-content: flex-end;
   padding: 16px;
-  height: 151px;
+  height: 170px;
 }
 .demo-avatar-dropdown {
   display: -webkit-flex;
@@ -212,4 +212,8 @@ _:-ms-input-placeholder, :root .demo-graph {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.mdl-layout-title{
+  background-color: #000000
 }
