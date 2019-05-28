@@ -59,7 +59,8 @@ html, body {
       -ms-flex-pack: end;
           justify-content: flex-end;
   padding: 16px;
-  height: 170px;
+  top: 16px;
+  /*height: 180px;*/
 }
 .demo-avatar-dropdown {
   display: -webkit-flex;
@@ -216,4 +217,8 @@ _:-ms-input-placeholder, :root .demo-graph {
 
 .mdl-layout-title{
   background-color: #000000
+}
+
+::-webkit-scrollbar { 
+    display: none; 
 }
