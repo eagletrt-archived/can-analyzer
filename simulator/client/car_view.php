@@ -35,7 +35,7 @@
 
     <!-- <link rel="stylesheet" href="MDL/material.min.css" -->
     <link rel="stylesheet" href="styles.css">
-    
+
   </head>
 
   <body>
@@ -56,8 +56,9 @@
         </header>
 
         <nav class="demo-navigation mdl-navigation color-eagle-blue">
-          <a class="mdl-navigation__link" href=""><i class="material-icons" role="presentation">home</i>HOME</a>
-          <a class="mdl-navigation__link" href=""><i class="material-icons" role="presentation">time_to_leave</i>Car view</a>
+          <a class="mdl-navigation__link" href="index.php"><i class="material-icons" role="presentation">home</i>HOME</a>
+          <a class="mdl-navigation__link" href="car_view.php"><i class="material-icons" role="presentation">time_to_leave</i>Car view</a>
+          <a class="mdl-navigation__link" href="detailed_view.php"><i class="material-icons" role="presentation">list</i>Detailed view</a>
         </nav>
       </div>
       <!-- End left menù -->
