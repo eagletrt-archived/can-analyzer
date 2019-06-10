@@ -36,6 +36,12 @@
     <!-- <link rel="stylesheet" href="MDL/material.min.css" -->
     <link rel="stylesheet" href="styles.css">
 
+    <style>
+        table, thead, tr, th, td { border: none; }
+        .table-responsive, table { width: 100%; }
+        th { background-color: #1E274B; color: #D8DBE2; width: 14.28%; }
+        td { text-align: center; }
+    </style>
   </head>
 
   <body>
@@ -65,37 +71,59 @@
 
       <!-- Main tag (page content) -->
       <main class="mdl-layout__content color-eagle-gray">
-        <div class="mdl-grid" style="padding-top: 100px;">
-          <div class="mdl-cell mdl-cell--1-col"></div>
-          <div class="mdl-cell mdl-cell--10-col">
-            <table align="center" class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
-              <thead>
-                <tr>
-                  <th class="mdl-data-table__cell--non-numeric">Msg</th>
-                  <th>Type</th>
-                  <th>Data</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="mdl-data-table__cell--non-numeric">Acrylic (Transparent)</td>
-                  <td>25</td>
-                  <td>sdkuhfiluhesfgiuweh 398y 983 sdifn9q83yrè 0hsef9 23èsdfsdfsdfsdfsdf0 </td>
-                </tr>
-                <tr>
-                  <td class="mdl-data-table__cell--non-numeric">Plywood (Birch)</td>
-                  <td>50</td>
-                  <td>$1.25</td>
-                </tr>
-                <tr>
-                  <td class="mdl-data-table__cell--non-numeric">Laminate (Gold on Blue)</td>
-                  <td>10</td>
-                  <td>$2.35</td>
-                </tr>
-              </tbody>
-            </table>
-            <div class="mdl-cell mdl-cell--1-col"></div>
-          </div>
+        <div class="mdl-grid" style="padding: 25px;">
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>
+                                ID
+                            </th>
+                            <th>
+                                Name
+                            </th>
+                            <th>
+                                Priority
+                            </th>
+                            <th>
+                                Device
+                            </th>
+                            <th>
+                                Sent To
+                            </th>
+                            <th>
+                                Receive From
+                            </th>
+                            <th>
+                                Message
+                            </th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>
+                            <?php $id ?>
+                        </td>
+                        <td>
+                            <?php $name ?>
+                        </td>
+                        <td>
+                            <?php $priority ?>
+                        </td>
+                        <td>
+                            <?php $device ?>
+                        </td>
+                        <td>
+                            <?php $sent_to ?>
+                        </td>
+                        <td>
+                            <?php $rec_from ?>
+                        </td>
+                        <td>
+                            <?php $msg ?>
+                        </td>
+                    </tr>
+                </table>
+            </div>
         </div>
       </main>
     </div>
