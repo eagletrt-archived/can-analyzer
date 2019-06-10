@@ -36,20 +36,7 @@
                 </div>
             </header>
 
-            <!-- Left menù -->
-            <div class="demo-drawer mdl-layout__drawer color-eagle-darkblue mdl-color-text--blue-grey-50">
-                <header class="demo-drawer-header">
-                    <img src="images/logo.png" class="logo"><br>
-                    <img src="images/text-logo.png" class="logo">
-                </header>
-
-                <nav class="demo-navigation mdl-navigation color-eagle-blue">
-                    <a class="mdl-navigation__link" href="index.php"><i class="material-icons" role="presentation">home</i>HOME</a>
-                    <a class="mdl-navigation__link" href="car_view.php"><i class="material-icons" role="presentation">time_to_leave</i>Car view</a>
-                    <a class="mdl-navigation__link" href="detailed_view.php"><i class="material-icons" role="presentation">list</i>Detailed view</a>
-                </nav>
-            </div>
-            <!-- End left menù -->
+            <?php include 'include/header.php'; ?>
 
             <!-- Main tag (page content) -->
             <main class="mdl-layout__content color-eagle-gray">
