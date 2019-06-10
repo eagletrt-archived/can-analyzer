@@ -16,119 +16,101 @@
   limitations under the License
 -->
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>Chimera EVO simulator</title>
+    <head>
+        <?php include 'include/head.php'; ?>
+        <style>
+            table, thead, tr, th, td { border: none; }
+            .table-responsive, table { width: 100%; }
+            th { background-color: #1E274B; color: #D8DBE2; width: 14.28%; }
+            td { text-align: center; }
+        </style>
+    </head>
 
-    <link rel="shortcut icon" href="images/favicon.png">
+    <body>
+        <!-- Main cointainer -->
+        <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
 
-    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
-    <!--
-    <link rel="canonical" href="http://www.example.com/">
-    -->
+            <!-- Top bar -->
+            <header class="mdl-layout__header color-eagle-blue">
+                <div class="mdl-layout__header-row">
+                </div>
+            </header>
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.cyan-light_blue.min.css">
+            <!-- Left menù -->
+            <div class="demo-drawer mdl-layout__drawer color-eagle-darkblue mdl-color-text--blue-grey-50">
+                <header class="demo-drawer-header">
+                    <img src="images/logo.png" class="logo"><br>
+                    <img src="images/text-logo.png" class="logo">
+                </header>
 
-    <!-- <link rel="stylesheet" href="MDL/material.min.css" -->
-    <link rel="stylesheet" href="styles.css">
-
-    <style>
-        table, thead, tr, th, td { border: none; }
-        .table-responsive, table { width: 100%; }
-        th { background-color: #1E274B; color: #D8DBE2; width: 14.28%; }
-        td { text-align: center; }
-    </style>
-  </head>
-
-  <body>
-     <!-- Main cointainer -->
-    <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
-
-      <!-- Top bar -->
-      <header class="mdl-layout__header color-eagle-blue">
-        <div class="mdl-layout__header-row">
-        </div>
-      </header>
-
-      <!-- Left menù -->
-      <div class="demo-drawer mdl-layout__drawer color-eagle-darkblue mdl-color-text--blue-grey-50">
-        <header class="demo-drawer-header">
-            <img src="images/logo.png" class="logo"><br>
-            <img src="images/text-logo.png" class="logo">
-        </header>
-
-        <nav class="demo-navigation mdl-navigation color-eagle-blue">
-          <a class="mdl-navigation__link" href="index.php"><i class="material-icons" role="presentation">home</i>HOME</a>
-          <a class="mdl-navigation__link" href="car_view.php"><i class="material-icons" role="presentation">time_to_leave</i>Car view</a>
-          <a class="mdl-navigation__link" href="detailed_view.php"><i class="material-icons" role="presentation">list</i>Detailed view</a>
-        </nav>
-      </div>
-      <!-- End left menù -->
-
-      <!-- Main tag (page content) -->
-      <main class="mdl-layout__content color-eagle-gray">
-        <div class="mdl-grid" style="padding: 25px;">
-            <div class="table-responsive">
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>
-                                ID
-                            </th>
-                            <th>
-                                Name
-                            </th>
-                            <th>
-                                Priority
-                            </th>
-                            <th>
-                                Device
-                            </th>
-                            <th>
-                                Sent To
-                            </th>
-                            <th>
-                                Receive From
-                            </th>
-                            <th>
-                                Message
-                            </th>
-                        </tr>
-                    </thead>
-                    <tr>
-                        <td>
-                            <?php $id ?>
-                        </td>
-                        <td>
-                            <?php $name ?>
-                        </td>
-                        <td>
-                            <?php $priority ?>
-                        </td>
-                        <td>
-                            <?php $device ?>
-                        </td>
-                        <td>
-                            <?php $sent_to ?>
-                        </td>
-                        <td>
-                            <?php $rec_from ?>
-                        </td>
-                        <td>
-                            <?php $msg ?>
-                        </td>
-                    </tr>
-                </table>
+                <nav class="demo-navigation mdl-navigation color-eagle-blue">
+                    <a class="mdl-navigation__link" href="index.php"><i class="material-icons" role="presentation">home</i>HOME</a>
+                    <a class="mdl-navigation__link" href="car_view.php"><i class="material-icons" role="presentation">time_to_leave</i>Car view</a>
+                    <a class="mdl-navigation__link" href="detailed_view.php"><i class="material-icons" role="presentation">list</i>Detailed view</a>
+                </nav>
             </div>
-        </div>
-      </main>
-    </div>
+            <!-- End left menù -->
 
-    <!-- <script src="https://code.getmdl.io/1.3.0/material.min.js"></script> -->
-    <script src="MDL/material.min.js"></script>
-  </body>
+            <!-- Main tag (page content) -->
+            <main class="mdl-layout__content color-eagle-gray">
+                <div class="mdl-grid" style="padding: 25px;">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        ID
+                                    </th>
+                                    <th>
+                                        Name
+                                    </th>
+                                    <th>
+                                        Priority
+                                    </th>
+                                    <th>
+                                        Device
+                                    </th>
+                                    <th>
+                                        Sent To
+                                    </th>
+                                    <th>
+                                        Receive From
+                                    </th>
+                                    <th>
+                                        Message
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <td>
+                                    <?php $id ?>
+                                </td>
+                                <td>
+                                    <?php $name ?>
+                                </td>
+                                <td>
+                                    <?php $priority ?>
+                                </td>
+                                <td>
+                                    <?php $device ?>
+                                </td>
+                                <td>
+                                    <?php $sent_to ?>
+                                </td>
+                                <td>
+                                    <?php $rec_from ?>
+                                </td>
+                                <td>
+                                    <?php $msg ?>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <!-- <script src="https://code.getmdl.io/1.3.0/material.min.js"></script> -->
+        <script src="MDL/material.min.js"></script>
+    </body>
 </html>
