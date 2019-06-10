@@ -16,3 +16,16 @@
 
         <!-- <link rel="stylesheet" href="MDL/material.min.css" -->
         <link rel="stylesheet" href="styles.css">
+        
+        <!-- script image mapster -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+        <script type="text/javascript" src="src/redist/when.js"></script>
+        <script type="text/javascript" src="src/core.js"></script>
+        <script type="text/javascript" src="src/graphics.js"></script>
+        <script type="text/javascript" src="src/mapimage.js"></script>
+        <script type="text/javascript" src="src/mapdata.js"></script>
+        <script type="text/javascript" src="src/areadata.js"></script>
+        <script type="text/javascript" src="src/areacorners.js"></script>
+        <script type="text/javascript" src="src/scale.js"></script>
+        <script type="text/javascript" src="src/tooltip.js"></script>
+        <script type="text/javascript" src="mapImage.js"></script>

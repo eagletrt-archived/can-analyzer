@@ -37,12 +37,23 @@
                 <div class="mdl-grid" style="padding-top: 100px;">
                     <div class="mdl-cell mdl-cell--1-col"></div>
                     <div class="mdl-cell mdl-cell--10-col">
-                        <img src="images/car.png" class="car-image">
+                        <img src="images/car.png" id="car" class="car-image" usemap="#car">
+                        <map id="car_map" name="car">
+                            <area id="cu1" name="ECU" href="#" onclick="location.replace('index.php')" coords="106,162,143,122" shape="rect">
+                            <area id="cu2" name="cu" href="#" coords="435,86,382,46" shape="rect">
+                            <area id="cu3" name="cu" href="#" coords="386,196,433,236" shape="rect">
+                        </map>
                     </div>
                     <div class="mdl-cell mdl-cell-1-col"></div>
                 </div>
             </main>
         </div>
+        
+<script>
+    function sel() {//A TEST FUNCTION THAT SIMULATE A CLICK ON THE SECOND CONTROL UNIT - USEFUL WHEN WE WILL MANAGE MESSEGES FROM CONTROL UNITS
+        document.getElementById("cu2").click();
+    }
+</script>
 
         <!-- <script src="https://code.getmdl.io/1.3.0/material.min.js"></script> -->
         <script src="MDL/material.min.js"></script>
