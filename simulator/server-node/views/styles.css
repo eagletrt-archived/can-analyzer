@@ -1,0 +1,129 @@
+/**
+ * Copyright 2015 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+html, body {
+    /* Font still TBD */
+    font-family: 'Roboto', 'Helvetica', sans-serif;
+}
+.logo {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.demo-layout .mdl-layout__header .mdl-layout__drawer-button {
+    color: #F29100;
+}
+.mdl-layout__drawer .avatar {
+    margin-bottom: 16px;
+}
+.demo-drawer {
+    border: none;
+}
+/* iOS Safari specific workaround */
+.demo-drawer .mdl-menu__container {
+    z-index: -1;
+}
+.demo-drawer .demo-navigation {
+    z-index: -2;
+}
+/* END iOS Safari specific workaround */
+
+.demo-drawer .mdl-menu .mdl-menu__item {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.demo-drawer-header {
+    box-sizing: border-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding: 16px;
+    top: 16px;
+    /*height: 180px;*/
+}
+
+.demo-navigation {
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+.demo-layout .demo-navigation .mdl-navigation__link {
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #D8DBE2;
+    font-weight: 500;
+}
+.demo-layout .demo-navigation .mdl-navigation__link:hover {
+    background-color: #0F1426;
+    color: #F29100;
+}
+.demo-navigation .mdl-navigation__link .material-icons {
+    font-size: 24px;
+    color: #F29100;
+    margin-right: 32px;
+}
+
+/* to adapt car image */
+.car-image{
+    width: 100%;
+}
+
+/* Disable the scrollbar */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* All eagle's logo color (set as background) */
+.color-eagle-blue {
+    background-color: #1E274B;
+}
+.color-eagle-red {
+    background-color: #AD0F0A;
+}
+.color-eagle-yellow {
+    background-color: #FFEC00;
+}
+.color-eagle-orange {
+    background-color: #F29100;
+}
+.color-eagle-gray {
+    background-color: #D8DBE2;
+}
+.color-eagle-darkblue {
+    background-color: #0F1426;
+}
+
+.txt-color-eagle-gray {
+    color: #D8DBE2;
+}
